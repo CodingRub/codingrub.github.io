@@ -11,6 +11,11 @@ nav {
     background-color: rgb(69, 69, 69);
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .menu-list {
     list-style: none;
     padding: 0;
@@ -28,7 +33,7 @@ main {
 
 .main-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
