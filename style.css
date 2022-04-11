@@ -11,16 +11,14 @@ nav {
     background-color: rgb(69, 69, 69);
 }
 
-.menu-container {
+.menu-list {
+    list-style: none;
+    padding: 0;
     display: flex;
     flex-direction: row;
 }
 
-.menu-list {
-    list-style: none;
-}
-
-.menu-element {
+.element-list {
     padding: 0 10px;
 }
 
