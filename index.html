@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <nav>
         <div class="logo">
-            <p>PORTFOLIO</p>
+            <span>PORTFOLIO</span>
         </div>
         <div class="menu-container">
             <ul class="menu-list">
                 <li class="element-list"><a href="#">Home</a></li>
-                <li class="element-list"><a href="#">About Me</a></li>
+                <li class="element-list"><a href="#about">About Me</a></li>
                 <li class="element-list"><a href="#">Portfolio</a></li>
                 <li class="element-list"><a href="#">Contact Me</a></li>
             </ul>
@@ -23,10 +24,32 @@
     </nav>
     <main id="home">
         <div class="main-container">
+            <div class="imgBx">
+                <img src="rex2.jpg" alt="">
+            </div>
             <h3>Ruben STRACK</h3>
             <p>Computer Science Student</p>
-            <a href="">About Me</a>
+            <a class="btn" href="">Download my CV</a>
+            <ul class="socialMedia">
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
         </div>
     </main>
+    <section id="about" class="about adjust">
+        <div class="title">
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+            <div class="textBox">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, et doloribus fuga aliquam quidem repellendus, ducimus nemo odit magnam eveniet exercitationem eum ex cum impedit quibusdam qui dignissimos inventore, placeat blanditiis consequuntur illo pariatur ipsum minus. Sequi nemo modi error adipisci nam tenetur, reiciendis dignissimos eius, aperiam velit odio illo.</p>
+            </div>
+            <div class="imgBx">
+                <img src="rex2.jpg" alt="">
+            </div>
+        </div>
+    </section>
 </body>
 </html>
