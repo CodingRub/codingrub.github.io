@@ -25,3 +25,7 @@ nav {
 main {
     background-color: wheat;
 }
+
+p {
+    margin: 0;
+}
