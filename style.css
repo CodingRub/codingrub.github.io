@@ -26,6 +26,17 @@ main {
     background-color: wheat;
 }
 
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
 p {
     margin: 0;
 }
