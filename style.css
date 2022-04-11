@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(69, 69, 69);
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-list {
+    list-style: none;
+}
+
+.menu-element {
+    padding: 0 10px;
+}
+
+main {
+    background-color: wheat;
+}
