@@ -110,7 +110,9 @@ function tellPos(p) {
 }
 
 setInterval(function () {
-    c.createEntity("food", "blue")
+    for (var i = 0; i < 10; i++) {
+        c.createEntity("food", "blue")
+    }
 }, 2000);
 
 function animate() {

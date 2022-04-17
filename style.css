@@ -218,7 +218,7 @@ section {
     background-color: rgba(0, 0, 0, 0.801);
 }
 
-.portfolio .content .workBx .textBx a {
+.portfolio .content .workBx .textBx .code {
     display: none;
     background-color: transparent;
     color: #fff;
@@ -229,6 +229,21 @@ section {
     bottom: 80px;
 }
 
-.portfolio .content .workBx:hover .textBx a {
+.portfolio .content .workBx:hover .textBx .code {
+    display: block;
+}
+
+.portfolio .content .workBx .textBx .project {
+    display: none;
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+    border: 3px solid white;
+    padding: 5px 20px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.portfolio .content .workBx:hover .textBx .project {
     display: block;
 }
