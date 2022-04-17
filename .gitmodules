@@ -1,0 +1,3 @@
+[submodule "collisionSimulation"]
+	path = collisionSimulation
+	url = https://github.com/CodingRub/collisionSimulation
