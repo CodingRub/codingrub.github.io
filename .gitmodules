@@ -5,3 +5,7 @@
 [submodule "ecosystem"]
 	path = ecosystem
 	url = https://github.com/CodingRub/ecosystemSimulation
+
+[submodule "Shoot"]
+	path = Shoot
+	url = https://github.com/CodingRub/diepioCopycat.git
