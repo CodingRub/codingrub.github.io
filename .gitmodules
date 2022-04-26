@@ -1,3 +1,7 @@
 [submodule "collisionSimulation"]
 	path = collisionSimulation
 	url = https://github.com/CodingRub/collisionSimulation
+
+[submodule "ecosystem"]
+	path = ecosystem
+	url = https://github.com/CodingRub/ecosystemSimulation
