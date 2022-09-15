@@ -1,23 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
 
+:root {
+    --primary: #F5E7DF;
+    --secondary: #7F8C4D;
+    --color-text: #E4DDD3;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: black;
     font-family: 'Poppins', sans-serif;
+    background-color: var(--primary);
 }
 
 a {
     text-decoration: none;
 }
 
+
 nav {
-    position: fixed;
     top: 0;
     width: 100%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.307);
-    background-color: rgb(150, 150, 150);
+    background-color: var(--secondary);
     height: 100px;
     padding: 0 40px;
     display: flex;
@@ -27,11 +43,35 @@ nav {
     z-index: 10000;
 }
 
+.custom-shape-divider-top-1663266659 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1663266659 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 54px;
+}
+
+.custom-shape-divider-top-1663266659 .shape-fill {
+    fill: var(--secondary);
+}
+
 .logo {
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-text);
 }
 
 .menu-list {
@@ -46,27 +86,30 @@ nav {
 }
 
 .element-list a {
-    color: black;
+    color: var(--color-text);
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
 }
 
-main {
-    background-color: rgb(150, 150, 150);
+
+.home {
+    background-image: url(background.svg);
+    background-repeat:no-repeat!important;
+    background-size: 100%;
     position: relative;
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-}
-
-.main-container {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
-.main-container .imgBx {
+.portfolio-bkgd {
+    position: absolute;
+}
+
+.home .imgBx {
     width: 200px;
     position: relative;
     overflow: hidden;
@@ -75,7 +118,7 @@ main {
     height: 200px;
 }
 
-.main-container .imgBx img {
+.home .imgBx img {
     position: absolute;
     top: 0;
     left: 0;
@@ -84,9 +127,18 @@ main {
     object-fit: cover;
 }
 
+.home .textBx {
+    text-align: center;
+}
+
+.home .textBx p {
+    text-transform: capitalize;
+}
+
 h3 {
     position: relative;
-    font-size: 1.7em;
+    font-size: 2rem;
+    font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin: 0;
@@ -126,7 +178,7 @@ p {
     width: 40px;
     height: 40px;
     background: rgba(0, 0, 0, 0.05);
-    color: black;
+    color: var(--color-text);
     margin: 5px;
     display: flex;
     justify-content: center;
@@ -140,7 +192,7 @@ p {
 }
 
 section {
-    margin: 75px 0;
+    padding: 8% 0;
 }
 
 .title {
@@ -152,8 +204,9 @@ section {
     position: relative;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 1.75em;
+    font-size: 2rem;
     margin: 0;
+    font-weight: 600;
     margin-bottom: 50px;
 }
 
@@ -168,11 +221,19 @@ section {
     background-color: black;
 }
 
+.portfolio {
+    position: relative;
+    background-image: url(background.svg);
+    background-repeat:no-repeat!important;
+    background-size: 100%;
+}
+
+
+
 .portfolio .content {
     display: flex;
     justify-content: center;
     align-content: space-between;
-    background-color: white;
     flex-wrap: wrap;
 }
 
@@ -221,7 +282,7 @@ section {
 .portfolio .content .workBx .textBx .code {
     display: none;
     background-color: transparent;
-    color: #fff;
+    color: var(--color-text);;
     font-weight: bold;
     border: 3px solid white;
     padding: 5px 20px;
@@ -236,7 +297,7 @@ section {
 .portfolio .content .workBx .textBx .project {
     display: none;
     background-color: transparent;
-    color: #fff;
+    color: var(--color-text);
     font-weight: bold;
     border: 3px solid white;
     padding: 5px 20px;
@@ -246,4 +307,114 @@ section {
 
 .portfolio .content .workBx:hover .textBx .project {
     display: block;
+}
+
+
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--secondary);
+    position: relative;
+    color: var(--color-text);
+}
+
+.about-img img {
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.about-text h5 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.about-text p {
+    letter-spacing: 1px;
+    line-height: 28px;
+    max-width: 590px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    font-weight: 600;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: ease .35s;
+}
+
+.custom-shape-divider-bottom-1663263797 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1663263797 svg {
+    position: relative;
+    display: block;
+    width: calc(112% + 1.3px);
+    height: 105px;
+}
+
+.custom-shape-divider-bottom-1663263797 .shape-fill {
+    fill: var(--secondary);
+}
+
+.custom-shape-divider-bottom-1663264097 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1663264097 svg {
+    position: relative;
+    display: block;
+    width: calc(119% + 1.3px);
+    height: 93px;
+}
+
+.custom-shape-divider-bottom-1663264097 .shape-fill {
+    fill: var(--secondary);
+}
+
+
+.custom-shape-divider-top-1663266888 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1663266888 svg {
+    position: relative;
+    display: block;
+    width: calc(115% + 1.3px);
+    height: 44px;
+}
+
+.custom-shape-divider-top-1663266888 .shape-fill {
+    fill: var(--secondary);
 }
