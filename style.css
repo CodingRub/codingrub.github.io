@@ -583,8 +583,10 @@ p {
 
 .box-container .box {
     border: 2px solid black;
-    padding: 10px 30px;
+    padding: 40px 25px;
     display: flex;
+    cursor: pointer;
+    transition: all .40s;
     flex-direction: column;
     gap: 1rem;
 }
@@ -671,7 +673,33 @@ textarea {
     fill: #D8BB9C;
 }
 
+@media screen and (max-width: 1430px) {
+    section {
+        padding: 50px 3%;
+    }
+}
+
 @media only screen and (max-width: 800px) {
+    .about-text h2 {
+        font-size: 1.8rem;
+    }
+    
+    .about-text h5 {
+        font-size: 1.1rem;
+    }
+
+    .about-text p {
+        font-size: 0.8rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .menu-toggle {
+        font-size: 1.5rem;
+    }
+
     .menu-list {
       display: none;
     }
@@ -686,5 +714,8 @@ textarea {
 
     .form-contact form {
         padding: 0 10px;
+        width: 300px;
     }
+
+
 }
