@@ -570,7 +570,7 @@ p {
 
 .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     gap: 2rem;
     align-items: center;
     margin-top: 2rem;
@@ -682,5 +682,9 @@ textarea {
 
     .about {
         flex-direction: column;
+    }
+
+    .form-contact form {
+        padding: 0 10px;
     }
 }
