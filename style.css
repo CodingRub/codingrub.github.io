@@ -570,7 +570,7 @@ p {
 
 .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     align-items: center;
     margin-top: 2rem;
@@ -717,5 +717,8 @@ textarea {
         width: 300px;
     }
 
+    .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    }
 
 }
