@@ -570,7 +570,7 @@ p {
 
 .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     gap: 2rem;
     align-items: center;
     margin-top: 2rem;
@@ -623,7 +623,7 @@ p {
     display: flex;
     flex-direction: column;
     align-self: center;
-    width: 400px;
+    width: 600px;
     gap: 1rem;
 }
 
