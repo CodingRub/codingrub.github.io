@@ -194,6 +194,7 @@ p {
     padding: 13px 30px;
     transition: ease .35s;
     position: relative;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -258,6 +259,7 @@ p {
     padding: 13px 30px;
     transition: ease .35s;
     position: relative;
+    cursor: pointer;
 }
 
 .btn-green:hover {
@@ -471,6 +473,7 @@ input[type=submit] {
     color: white;
     transition: ease all .35s;
     font-weight: 600;
+    cursor: pointer;
 }
 
 input[type=submit]:hover {
@@ -615,7 +618,7 @@ textarea {
     }
 
     .menu-list {
-      display: none;
+        display: none;
     }
 
     .menu-toggle {
