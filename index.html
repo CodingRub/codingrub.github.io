@@ -39,9 +39,9 @@
         </div>
         <div class="main-networks">
             <ul>
-                <li><a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-                <li><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                <li><a href=""><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/Ir0nHack" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/ruben-strack/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/CodingRub" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
             </ul>
         </div>
     </section>
@@ -65,45 +65,45 @@
         </div>
         <div class="box-container">
             <div class="box">
-                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                <i class="fa fa-css3" aria-hidden="true"></i>
                 <div class="text">
                     <h3>Front-End</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, accusamus.</p>
+                    <p>Capable de faire des sites responsive en HTML, CSS, Sass avec du JS</p>
                 </div>
             </div>
             <div class="box">
-                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                <i class="fa fa-server" aria-hidden="true"></i>
                 <div class="text">
                     <h3>Back-end</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, accusamus.</p>
+                    <p>Capable de faire des application CRUD en PHP ou en Django avec intégration de base de données sous MySQL ou SQLite</p>
                 </div>
             </div>
             <div class="box">
-                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                <i class="fa fa-desktop" aria-hidden="true"></i>
                 <div class="text">
                     <h3>Design UX</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, accusamus.</p>
+                    <p>Capable de faire des designs avec Figma</p>
                 </div>
             </div>
             <div class="box">
-                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
                 <div class="text">
                     <h3>Réseaux</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, accusamus.</p>
+                    <p>Connaissances de bases en réseau. Capable de construire un réseau basique avec des VLANS, créer des routes, configurer des serveurs DHCP.</p>
                 </div>
             </div>
             <div class="box">
-                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                <i class="fa fa-lock" aria-hidden="true"></i>
                 <div class="text">
                     <h3>Cybersécurité</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, accusamus.</p>
+                    <p>Connaissances de bases en cybersécurité (Enumération, Exploitation, Maintenir l'accès). Compétences avec les outils Metasploit, Nmap, Wireshark, BurpSuite</p>
                 </div>
             </div>
             <div class="box">
-                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                <i class="fa fa-database" aria-hidden="true"></i>
                 <div class="text">
                     <h3>Base de donnée</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, accusamus.</p>
+                    <p>Capable de créer et d'exploiter une base de données. Compétences avec les outils Access, SQL Developer...</p>
                 </div>
             </div>
         </div>
@@ -217,10 +217,10 @@
             <h2>Contact</h2>
         </div>
         <div class="form-contact">
-            <form>
-                <input type="text" name="" id="" placeholder="Votre nom:">
-                <input type="email" name="" id="" placeholder="Votre email:">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Votre message:"></textarea>
+            <form id="myForm">
+                <input type="text" name="" id="name" placeholder="Votre nom:">
+                <input type="email" name="" id="email" placeholder="Votre email:">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Votre message:"></textarea>
                 <input type="submit" value="Envoyer">
             </form>
         </div>
@@ -230,14 +230,29 @@
         <div class="networks">
             <span></span>
             <ul>
-                <li><a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-                <li><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                <li><a href=""><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/Ir0nHack" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/ruben-strack/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/CodingRub" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
             </ul>
             <span></span>
         </div>
         <p>Copyright © 2022 Ruben Strack</p>
     </section>
+
+    <script type="text/javascript">
+        function sendMail() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            window.location.replace("mailto:rubstr@protonmail.com?subject=Demande de "+name+"&cc="+email+"&body="+message);
+        }
+
+        const form = document.getElementById("myForm");
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+            sendMail();
+        });
+    </script>
 </body>
 
 </html>
