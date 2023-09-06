@@ -41,7 +41,7 @@
       <div class="textBx">
         <h3>Ruben STRACK</h3>
         <p>étudiant en informatique</p>
-        <a class="btn" href="CVSTRACKRuben.pdf" download>Télécharger mon CV</a>
+        <a class="btn" href="img/CVSTRACKRuben.pdf" download>Télécharger mon CV</a>
       </div>
       <div class="main-networks">
         <ul>
@@ -66,7 +66,7 @@
 
     <section class="about" id="aboutme">
       <div class="about-img">
-        <img src="undraw_programming_re_kg9v.svg" alt="" />
+        <img src="img/undraw_programming_re_kg9v.svg" alt="" />
       </div>
       <div class="about-text">
         <h2>à propos de moi</h2>
@@ -320,60 +320,7 @@
       <p>Copyright © 2023 Ruben Strack</p>
     </section>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript">
-      // Récupérer les éléments du DOM
-      const menuToggle = document.getElementById("mobile-menu-toggle");
-      const menuList = document.querySelector(".menu-list");
-      const menuLinks = document.querySelectorAll(".element-list a");
-
-      // Ajouter un gestionnaire d'événement pour le bouton "hamburger"
-      menuToggle.addEventListener("click", function () {
-        menuList.classList.toggle("active");
-      });
-
-      // Fermer le menu lorsque l'utilisateur clique à l'extérieur
-      document.addEventListener("click", function (event) {
-        if (!menuList.contains(event.target) && event.target !== menuToggle) {
-          menuList.classList.remove("active");
-        }
-      });
-
-      menuLinks.forEach(function (link) {
-        link.addEventListener("click", function () {
-          menuList.classList.remove("active");
-        });
-      });
-    </script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("OBQk6izltDGnxdaYF"); // Remplacez YOUR_USER_ID par votre ID EmailJS
-
-        const form = document.getElementById("myForm");
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const message = document.getElementById("message").value;
-        const subject = document.getElementById("subject").value;
-        form.addEventListener("submit", function (event) {
-          event.preventDefault();
-          var contactParams = {
-            subject: subject,
-            name: name,
-            email: email,
-            message: message,
-          };
-          console.log(contactParams)
-          emailjs
-            .send("service_czu0bxn", "template_ghiqs59", contactParams)
-            .then(
-              function () {
-                alert("E-mail envoyé avec succès !");
-              },
-              function (error) {
-                console.error("Erreur lors de l'envoi de l'e-mail :", error);
-              }
-            );
-        });
-      })();
-    </script>
+    <script src="js/email.js"></script>
+    <script src="js/nav.js"></script>
   </body>
 </html>

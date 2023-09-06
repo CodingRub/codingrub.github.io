@@ -96,6 +96,11 @@ nav {
     padding: 0 10px;
 }
 
+.element-list:hover a {
+    border-bottom: 2px solid white;
+    transition: 0.5s ease-in-out;
+}
+
 .hide {
     display: none;
   }
@@ -118,7 +123,7 @@ nav {
 /* MAIN */
 
 .home {
-  background-image: url(background1.svg);
+  background-image: url(img/background1.svg);
   padding-top: 180px;
   /* Full height */
   height: 100%;
@@ -260,7 +265,7 @@ p {
   position: relative;
   display: flex;
   flex-direction: column;
-  background-image: url(background1.svg);
+  background-image: url(img/background1.svg);
   /* Full height */
   height: 100%;
 
@@ -390,7 +395,7 @@ p {
 
 .contact {
   position: relative;
-  background-image: url(background1.svg);
+  background-image: url(img/background1.svg);
   /* Full height */
   height: 100%;
 
