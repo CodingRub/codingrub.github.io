@@ -282,6 +282,7 @@
         <form id="myForm">
           <input type="text" name="" id="name" placeholder="Votre nom:" />
           <input type="email" name="" id="email" placeholder="Votre email:" />
+          <input type="text" name="" id="subject" placeholder="Sujet du message:" />
           <textarea
             name=""
             id="message"
@@ -351,21 +352,21 @@
         const name = document.getElementById("name").value;
         const email = document.getElementById("email").value;
         const message = document.getElementById("message").value;
+        const subject = document.getElementById("subject").value;
         form.addEventListener("submit", function (event) {
           event.preventDefault();
           var contactParams = {
-            from_name: name,
-            from_email: email,
+            subject: subject,
+            name: name,
+            email: email,
             message: message,
           };
+          console.log(contactParams)
           emailjs
-            .send("service_czu0bxn", "template_8dekx6f", contactParams)
+            .send("service_czu0bxn", "template_ghiqs59", contactParams)
             .then(
               function () {
                 alert("E-mail envoyé avec succès !");
-                document.getElementById("name").value = "";
-                document.getElementById("email").value = "";
-                document.getElementById("message").value = "";
               },
               function (error) {
                 console.error("Erreur lors de l'envoi de l'e-mail :", error);
